@@ -1,0 +1,18 @@
+\begin{fujiwaLaTeX}
+    \print{"'iを入力してください'"};
+    \input{"i"};
+    \set{"sum"}{0};
+    \until{\={\get{"i"}}{0}}{
+        \step{
+            \set{"sum"}{
+                \+{\get{"sum"}}{\get{"i"}}
+            }
+        }{
+            \set{"i"}{
+                \+{\get{"i"}}{-1}
+            }
+        }
+    };
+    \get{"sum"};
+    \print{"'sum = ' + sum"}
+\end{fujiwaLaTeX}

@@ -1,0 +1,14 @@
+\begin{fujiwaLaTeX}
+    \set{"ans"}{1};
+    \set{"ans"}{
+        \+{
+            \get{"ans"}
+        }{2}
+    };
+    \set{"ans"}{
+        \+{
+            \get{"ans"}
+        }{3}
+    };
+    \print{"ans"};
+\end{fujiwaLaTeX}

@@ -1,0 +1,26 @@
+\begin{fujiwaLaTeX}
+    \set{"i"}{100};
+    \set{"sum"}{0};
+    \until{
+        \={
+            \get{"i"}
+        }{0}
+    }{
+        \step{
+            \set{"sum"}{
+                \+{
+                    \get{"sum"}
+                }{
+                    \get{"i"}
+                }
+            }
+        }{
+            \set{"i"}{
+                \+{
+                    \get{"i"}
+                }{-1}
+            }
+        }
+    };
+    \get{"sum"};
+\end{fujiwaLaTeX}
